@@ -4,12 +4,15 @@ import java.time.LocalDate;
 
 import com.gustavo.academia.Alumno;
 import com.gustavo.operaciones.Operacion;
+import com.gustavo.persona.Persona;
 
 public class Test {
 
 	public static void main(String[] args) {
 
 		Alumno alumno = new Alumno();
+		
+		//Persona persona = new Persona();
 
 		System.out.println();
 

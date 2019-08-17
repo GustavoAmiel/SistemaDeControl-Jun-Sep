@@ -16,31 +16,31 @@ public class Alumno extends Persona {
 
 	public Alumno(String nombres) {
 		this(nombres, ent.next());
-		super.setNombres(nombres);
+		setNombres(nombres);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP) {
 		this(nombres, ApellidoP, ent.next());
 
-		super.setApelllidoP(ApellidoP);
+		setApelllidoP(ApellidoP);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM) {
 		this(nombres, ApellidoP, ApellidoM, ent.next());
-		super.setApelllidoM(ApellidoM);
+		setApelllidoM(ApellidoM);
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM, String curp) {
 		this(nombres, ApellidoP, ApellidoM, ApellidoM, ent.next());
-		super.setCurp(curp);
+		setCurp(curp);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM, String curp, String direccion) {
 		this(nombres, ApellidoP, ApellidoM, ApellidoM, direccion, ent.next());
-		super.setDireccion(direccion);
+		setDireccion(direccion);
 
 	}
 
@@ -65,6 +65,66 @@ public class Alumno extends Persona {
 		return "Alumno [matricula=" + matricula + ", getCurp()=" + getCurp() + ", getNombres()=" + getNombres()
 				+ ", getApelllidoP()=" + getApelllidoP() + ", getApelllidoM()=" + getApelllidoM() + ", getDireccion()="
 				+ getDireccion() + "]";
+	}
+
+	@Override
+	public String getCurp() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setCurp(String curp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String getNombres() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setNombres(String nombres) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String getApelllidoP() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setApelllidoP(String apelllidoP) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String getApelllidoM() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setApelllidoM(String apelllidoM) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String getDireccion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setDireccion(String direccion) {
+		// TODO Auto-generated method stub
+
 	}
 
 	/*
