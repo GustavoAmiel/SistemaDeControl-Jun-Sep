@@ -31,6 +31,8 @@ public abstract class Persona extends Humano {
 	public abstract void setDireccion(String direccion);
 	
 	
+	
+	
 
 	/**
 	 * @return the curp

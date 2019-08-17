@@ -1,6 +1,6 @@
 package com.gustavo.persona;
 
-public class Humano {
+public abstract class Humano {
 	// Propiedades
 	private int pies;
 	private int manos;

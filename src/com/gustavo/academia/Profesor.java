@@ -2,7 +2,7 @@ package com.gustavo.academia;
 
 import com.gustavo.persona.Persona;
 
-public class Profesor extends Persona {
+public final class Profesor extends Persona{
 
 	private String nEmpleado;
 
