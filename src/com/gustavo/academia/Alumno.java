@@ -2,9 +2,13 @@ package com.gustavo.academia;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
+import com.gustavo.controlscolar.Asistencia;
+import com.gustavo.controlscolar.Evaluable;
 import com.gustavo.persona.Persona;
 
-public class Alumno extends Persona {
+public class Alumno extends Persona implements Evaluable,Asistencia {
 
 	private String matricula;
 
@@ -13,33 +17,51 @@ public class Alumno extends Persona {
 	public Alumno() {
 
 	}
+	
+	
+
+	@Override
+	public int calificacion() {
+		// Metodo de la interface Evaluable
+		return 0;
+	}
+
+
+	@Override
+	public void asistirAClase() {
+		// Metodo de la interface asistencia
+		
+	}
+
+
 
 	public Alumno(String nombres) {
-		this(nombres, ent.next());
+		this(nombres, JOptionPane.showInputDialog("ApellidoP"));
+		
 		setNombres(nombres);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP) {
-		this(nombres, ApellidoP, ent.next());
+		this(nombres, ApellidoP, JOptionPane.showInputDialog("ApellidoM"));
 
 		setApelllidoP(ApellidoP);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM) {
-		this(nombres, ApellidoP, ApellidoM, ent.next());
+		this(nombres, ApellidoP, ApellidoM, JOptionPane.showInputDialog("Curp"));
 		setApelllidoM(ApellidoM);
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM, String curp) {
-		this(nombres, ApellidoP, ApellidoM, ApellidoM, ent.next());
+		this(nombres, ApellidoP, ApellidoM, ApellidoM, JOptionPane.showInputDialog("Dirección"));
 		setCurp(curp);
 
 	}
 
 	public Alumno(String nombres, String ApellidoP, String ApellidoM, String curp, String direccion) {
-		this(nombres, ApellidoP, ApellidoM, ApellidoM, direccion, ent.next());
+		this(nombres, ApellidoP, ApellidoM, ApellidoM, direccion, JOptionPane.showInputDialog("Matricula"));
 		setDireccion(direccion);
 
 	}

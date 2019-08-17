@@ -11,12 +11,15 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		Alumno alumno = new Alumno();
-		Profesor profesor = new Profesor();
+		//Alumno alumno = new Alumno("Gus");
+		
 		
 		//Persona persona = new Persona();
 
-		System.out.println();
+		//System.out.println(alumno);
+		
+		
+		Operacion.menu();
 
 		/*
 		 * Ejemplos y ejercicios de clases pasadas
